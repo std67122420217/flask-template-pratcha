@@ -36,5 +36,20 @@ def favorite_sports():
                         title=title,
                         sports=sports)
 
+@app.route('/favorite_movies')
+def favorite_movies():
+    """
+    Route สำหรับแสดงภาพยนตร์ที่ชื่นชอบ 5 เรื่อง
+    """
+    # รายการภาพยนตร์ที่คุณชื่นชอบ
+    movies = [
+        "Inception",
+        "The Shawshank Redemption",
+        "Pulp Fiction",
+        "Parasite",
+        "Spirited Away"
+    ]
+    return render_template('favorite_movies.html', movies=movies)
+
 if __name__ == "__main__":
     app.run(debug=True)
