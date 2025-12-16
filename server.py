@@ -10,9 +10,9 @@ def index():
 @app.route('/about')
 def about():
     title = 'about Page'
-    name = 'phuriphat sriwilat'
-    email = 'phuri@gmail.com'
-    mobile = '099 123 2133'
+    name = 'pratchayawut chindarat'
+    email = 'pratchayawut@gmail.com'
+    mobile = '091 333 5647'
     age = 20
     return render_template('about.html',
                            title='about Page',
